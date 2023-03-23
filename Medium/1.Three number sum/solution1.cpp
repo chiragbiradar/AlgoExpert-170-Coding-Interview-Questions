@@ -18,7 +18,7 @@ vector<vector<int>> threeNumberSum(vector<int> array, int targetSum)
             {
                 result.push_back({array[i], array[left], array[right]});
                 left++;
-                right++;
+                right--;
             }
             else if (array[i] + array[left] + array[right] < targetSum)
                 left++;
